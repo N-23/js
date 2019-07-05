@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>The in operator returns true if the specified property is in the specified object.</p>
+
+<p id="demo"></p>
+
+<script>
+// Arrays
+var cars = ["Saab", "Volvo", "BMW"];
+// Objects
+var person = {firstName:"John", lastName:"Doe", age:50};
+
+document.getElementById("demo").innerHTML =
+  ("Saab" in cars) + "<br>" + // Returns false (specify the index number instead of value)
+  (0 in cars) + "<br>" + // Returns true
+  (1 in cars) + "<br>" + // Returns true
+  (4 in cars) + "<br>" + // Returns false (does not exist)
+  ("length" in cars) + "<br>" + // Returns true
+
+  ("firstName" in person) + "<br>" + // Returns true
+  ("age" in person) + "<br>" + // Returns true
+
+  // Predefined objects
+  ("PI" in Math) + "<br>" + // Returns true
+  ("NaN" in Number) + "<br>" + // Returns true
+  ("length" in String); // Returns true
+</script>
+
+</body>
+</html>
+
