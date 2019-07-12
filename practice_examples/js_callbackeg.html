@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Call back example</h1>
+
+<script> 
+  
+   // add() function is called with arguments a, b 
+   // and callback, callback will be executed just  
+   // after ending of add() function 
+   function add(a, b , callback){ 
+   document.write(`The sum of ${a} and ${b} is ${a+b}.` +"<br>"); 
+   callback(); 
+   } 
+     
+   // disp() function is called just 
+   // after the ending of add() function  
+   function disp(){ 
+   document.write('This must be printed after addition'); 
+   } 
+     
+   // Calling add() function 
+   add(5,6,disp);     
+   /*//add() function is called with arguments given below 
+   add(5,6,function disp(){ 
+   document.write('This must be printed after addition.'); 
+   });*/ 
+</script>
+
+<p><b>Explanation:</b><br>
+<p>Here are the two functions – add(a, b, callback) and disp().<br>Here add() is called with the disp() function i.e. passed in as the third argument to the add function along with two numbers.<br>
+<p>As a result, the add() is invoked with 1, 2 and the disp() which is the callback.<br>The add() prints the addition of the two numbers and as soon as that is done, the callback function is fired! Consequently, we see whatever is inside the disp() as the output below the addition output.</p>
+</p>
+
+</body> 
+</html>

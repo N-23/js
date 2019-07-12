@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Object Properties</h2>
+
+<p>You can delete object properties.</p>
+
+<p id="demo"></p>
+
+<script>
+var person = {
+  firstname:"John",
+  lastname:"Doe",
+  age:50,
+  eyecolor:"blue"
+};
+
+delete person.age;
+document.getElementById("demo").innerHTML =
+person.firstname + " is " + person.age + " years old.";
+</script>
+
+<p>The delete keyword deletes a property from an object.</p><br>
+<p>The delete keyword deletes both the value of the property and the property itself.</p><br>
+<p>After deletion, the property cannot be used before it is added back again.</p><br>
+<p>The delete operator is designed to be used on object properties. It has no effect on variables or functions.</p><br>
+<p>The delete operator should not be used on predefined JavaScript object properties. It can crash your application.</p>
+<p>The delete keyword does not delete inherited properties, but if you delete a prototype property, it will affect all objects inherited from the prototype.</p>
+
+</body>
+</html>
+

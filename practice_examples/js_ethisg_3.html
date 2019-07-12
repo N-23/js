@@ -1,0 +1,23 @@
+!DOCTYPE html>
+<html>
+<body>
+
+<h2>The JavaScript <b>this</b> Keyword</h2>
+
+<p>In this example, <b>this</b> represents the object that "owns" myFunction:</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = myFunction();
+function myFunction() {
+  return this;
+}
+</script>
+
+<p>In a JavaScript function, the owner of the function is the default binding for this.</p><br>
+<p>So, in a function, this refers to the Global object [object Window].</p>
+
+</body>
+</html>
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The JavaScript this Keyword</h2>
+<p>In this example <strong>this</strong> refers to person2, even if it is a method of person1:</p>
+
+<p id="demo"></p>
+
+<script>
+var person1 = {
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+var person2 = {
+  firstName:"John",
+  lastName: "Doe",
+}
+var x = person1.fullName.call(person2); // Will return "John Doe" 
+document.getElementById("demo").innerHTML = x; 
+</script>
+
+<p>The call() and apply() methods are predefined JavaScript methods.</p><br>
+<p>They can both be used to call an object method with another object as argument.</p><br>
+<p>In the example above, when calling person1.fullName with person2 as argument, this will refer to person2, even if it is a method of person1.</p>
+
+</body>
+</html>
+

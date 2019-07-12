@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Object Properties</h2>
+
+<p id="demo"></p>
+
+<script>
+var txt = "";
+var person = {fname:"John", lname:"Doe", age:25}; 
+var x;
+//The JavaScript for...in statement loops through the properties of an object.
+for (x in person) { //x is variable and person is object
+  txt += person[x] + " ";
+}
+//The block of code inside of the for...in loop will be executed once for each property.
+document.getElementById("demo").innerHTML = txt;
+</script>
+
+</body>
+</html>
+

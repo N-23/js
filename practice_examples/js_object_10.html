@@ -1,0 +1,30 @@
+!DOCTYPE html>
+<html>
+<body>
+
+<p>Creating and using an object method.</p>
+
+<p>A method is actually a function definition stored as a property value.</p>
+
+<p id="demo"></p>
+
+<script>
+var person = {
+  firstName: "John",
+  lastName : "Doe",
+  id     : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+document.getElementById("demo").innerHTML = person.fullName();
+//document.getElementById("demo").innerHTML = person.fullName;<p>access the fullName property, without (), it will return the function definition</p>
+</script>
+
+<p>We can access an object method with the following syntax:objectName.methodName()</p><br>
+<p>In the above example accesses the fullName() method of a person object.</p>
+
+</body>
+</html>
+

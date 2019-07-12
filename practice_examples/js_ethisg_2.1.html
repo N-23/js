@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The JavaScript <b>this</b> Keyword</h2>
+
+<p>In this example, <b>this</b> refers to the window Object:</p>
+
+<p id="demo"></p>
+
+<script>
+"use strict";
+var x = this;
+document.getElementById("demo").innerHTML = x;
+</script>
+
+<p> In strict mode, when used alone, this also refers to the Global object [object Window].</p>
+
+</body>
+</html>
+

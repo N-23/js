@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Object Constructors</h2>
+
+<p>Adding a Method to a Constructor</p>
+
+<p id="demo"></p>
+
+<script>
+
+// Constructor function for Person objects
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+  this.name = function() {
+    return this.firstName + " " + this.lastName
+  };
+}
+
+// Create a Person object
+var myFather = new Person("John", "Doe", 50, "blue");
+
+// Display full name
+document.getElementById("demo").innerHTML =
+"My father is " + myFather.name(); 
+/*<script>
+// Constructor function for Person objects
+function Person(firstName,lastName,age,eyeColor) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.age = age;
+  this.eyeColor = eyeColor;
+  this.changeName = function (name) {
+    this.lastName = name;
+  }
+}
+// Create a Person object
+var myMother = new Person("Sally","Rally",48,"green");
+
+// Change last name
+myMother.changeName("Doe");
+
+// Display last name
+document.getElementById("demo").innerHTML =
+"My mother's last name is " + myMother.lastName;
+</script>
+*/
+</script>
+
+</body>
+</html>
+

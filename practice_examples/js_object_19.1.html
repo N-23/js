@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript has object versions of the primitive data types String, Number, and Boolean.But there is no reason to create complex objects. Primitive values are much faster.</h1><br>
+<p>The following notations are used in the following examples:<br>
+1.Use object literals {} instead of new Object().<br>
+2.Use string literals "" instead of new String().<br>
+3.Use number literals 12345 instead of new Number().<br>
+4.Use boolean literals true / false instead of new Boolean().<br>
+5.Use array literals [] instead of new Array().<br>
+6.Use pattern literals /()/ instead of new RegExp().<br>
+7.Use function expressions () {} instead of new Function().
+</p>
+
+<p id="demo"></p>
+
+<script>
+var x1 = {};    // object
+var x2 = "";    // string 
+var x3 = 0;     // number
+var x4 = false;   // boolean
+var x5 = [];    // object (not array)
+var x6 = /()/;    // object
+var x7 = function(){};  // function
+
+// Display the type of all
+document.getElementById("demo").innerHTML =
+"x1: " + typeof x1 + "<br>" +
+"x2: " + typeof x2 + "<br>" +
+"x3: " + typeof x3 + "<br>" +
+"x4: " + typeof x4 + "<br>" +
+"x5: " + typeof x5 + "<br>" +
+"x6: " + typeof x6 + "<br>" +
+"x7: " + typeof x7 + "<br>";
+</script>
+
+<h4>String Objects</h4>
+<p>Normally, strings are created as primitives: var firstName = "John".<br>
+But strings can also be created as objects using the new keyword: var firstName = new String("John")</p>
+
+<h4>Number Objects</h4>
+<p>Normally, numbers are created as primitives: var x = 123.<br>
+But numbers can also be created as objects using the new keyword: var x = new Number(123)</p>
+
+<h4>Boolean Objects</h4>
+<p>Normally, booleans are created as primitives: var x = false.<br>
+But booleans can also be created as objects using the new keyword: var x = new Boolean(false)</p>
+
+</body>
+</html>
