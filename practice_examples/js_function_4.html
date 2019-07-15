@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Functions can be invoked automatically without being called:</p>
+
+<p id="demo"></p>
+
+<script>
+(function () {
+  document.getElementById("demo").innerHTML = "Hello! I called myself";
+})();
+</script>
+
+<p>Function expressions can be made "self-invoking".</p><br>
+<p>A self-invoking expression is invoked (started) automatically, without being called.</p><br>
+<p>Function expressions will execute automatically if the expression is followed by ().</p><br>
+<p>You cannot self-invoke a function declaration.</p><br>
+<p>You have to add parentheses around the function to indicate that it is a function expression.</p>
+
+</body>
+</html>
+
+
+

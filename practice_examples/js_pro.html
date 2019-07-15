@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Prototype Inheritance in JavaScript</title>
+ </head>
+ <body>
+ <script>
+ //Super Class
+ var Mobile = function() {
+  this.a = 10;
+ }
+ 
+ Mobile.prototype.z = 30;
+ 
+ //Sub Class
+ var Samsung = function() {
+  Mobile.call(this);//Calling the mobile function
+  this.b=20;
+ } 
+ 
+ //Prototype Inheritance
+ Samsung.prototype = Object.create(Mobile.prototype);
+ Samsung.prototype.constructor = Samsung; 
+ Samsung.prototype.z = 50;
+ 
+ /*Mobile.prototype.z = 50;
+ document.write(m.z + "<br>");//Acessing the value from mobile function*/
+
+ var s = new Samsung();//Creating Object
+ document.write(s.a + "<br>");//Acessing the value from mobile function 
+ document.write(s.b + "<br>");//Acessing the value from samsung function
+ document.write(s.z + "<br>");//Acessing the value from samsung function 
+ /*var m = new Mobile();//Creating Object
+ document.write(m.a + "<br>");//Acessing the value from mobile function 
+ document.write(m.b + "<br>");//Acessing the value from samsung function but we can't acess as the flow doesn't goes from top to bottom
+ document.write(m.z + "<br>");//Acessing the value from samsung function*/
+ </script>
+ </body>
+<html>

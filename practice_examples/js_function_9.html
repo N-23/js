@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Finding the largest number.</p>
+<p id="demo"></p>
+
+<script>
+function findMax() {
+  var i;
+  var max = -Infinity;
+  for(i = 0; i < arguments.length; i++) {
+    if (arguments[i] > max) {
+      max = arguments[i];
+    }
+  }
+  return max;
+} 
+document.getElementById("demo").innerHTML = findMax(4, 5, 6);
+</script>
+
+<p>JavaScript functions have a built-in object called the arguments object.</p><br>
+<p>The argument object contains an array of the arguments used when the function was called (invoked).</p><br>
+<p>This way you can simply use a function to find (for instance) the highest value in a list of numbers.</p>
+
+</body>
+</html>
+
