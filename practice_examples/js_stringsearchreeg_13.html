@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Find the Unicode character specified by the hexadecimal number xxxx</h1>
+
+<p>Click the button to do a global search for the hexadecimal number 0057 (W) in a string.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var str = "Visit W3Schools. Hello World!"; 
+  var patt1 = /\u0057/g;//Metacharater
+  var result = str.match(patt1);
+  document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Matches any string that contains at least one n</h1>
+
+<p>Click the button to do a global search for at least one "o" in a string.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var str = "Hellooo World! Hello W3Schools!"; 
+  var patt1 = /o+/g;//Quantifier
+  var result = str.match(patt1);
+  document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Regular Expressions</h2>
+
+<p>Search for an "e" in the next paragraph:</p>
+
+<p id="p01">The best things in life are free!</p>
+
+<p id="demo"></p>
+
+<script>
+text = document.getElementById("p01").innerHTML; 
+document.getElementById("demo").innerHTML = /e/.test(text);
+</script>
+
+<p>The test() method is a RegExp expression method.</p><br>
+<p>It searches a string for a pattern, and returns true or false, depending on the result.</p><br>
+<p>The above example searches a string for the character "e".</p>
+
+</body>
+</html>
+

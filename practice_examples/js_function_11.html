@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>The global function (myFunction) returns the product of the arguments (a ,b):</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(a, b) {
+  return a * b;
+}
+document.getElementById("demo").innerHTML = myFunction(10, 2); 
+
+/*
+<p>Global functions automatically become window methods. Invoking myFunction() is the same as invoking window.myFunction().</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(a, b) {
+  return a * b;
+}
+document.getElementById("demo").innerHTML = window.myFunction(10, 2); 
+</script>
+*/
+</script>
+
+<p>The code inside a function is not executed when the function is defined.</p><br>
+<p>The code inside a function is executed when the function is invoked.</p><br>
+<p>It is common to use the term "call a function" instead of "invoke a function".</p><br>
+<p>It is also common to say "call upon a function", "start a function", or "execute a function".</p><br>
+<p>JavaScript function can be invoked without being called.</p>
+
+</body>
+</html>
+

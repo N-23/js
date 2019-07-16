@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Global and local variables with the same name are different variables. Modifying one, does not modify the other.<br>
+Variables created without the keyword var, are always global, even if they are created inside a function.</p><br>
+<p>Global variables live as long as your application (your window / your web page) lives.<br>
+Local variables have short lives. They are created when the function is invoked, and deleted when the function is finished.</p>
+
+<p>A function can access variables defined inside the function:</p>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var a = 4;
+  document.getElementById("demo").innerHTML = a * a;
+} 
+
+/*<p>A function can access variables defined outside the function:</p>
+<script>
+var a = 4;
+function myFunction() {
+  document.getElementById("demo").innerHTML = a * a;
+} 
+</script>
+<p>a is a global variable.In a web page, global variables belong to the window object.Global variables can be used (and changed) by all scripts in the page (and in the window).</p>*/
+</script>
+
+<p>In the above example,a is a local variable.A local variable can only be used inside the function where it is defined. It is hidden from other functions and other scripting code.</p>
+
+</body>
+</html>
+

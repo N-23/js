@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Math.max()</h2>
+
+<p>The below example returns the highest number in a list of number arguments.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = Math.max(1,2,3); 
+/*<script>
+document.getElementById("demo").innerHTML = Math.max.apply(null, [1,2,3]); 
+</script>
+<p>JavaScript arrays don't have a max() method so we apply Math.max()</p>*/
+/*<script>
+document.getElementById("demo").innerHTML = Math.max.apply(Math, [1,2,3]); 
+</script>
+*/
+/*<script>
+document.getElementById("demo").innerHTML = Math.max.apply(" ", [1,2,3]); 
+</script>
+*/
+/*<script>
+document.getElementById("demo").innerHTML = Math.max.apply(0, [1,2,3]); 
+</script>
+*/
+</script>
+
+<p>In JavaScript strict mode, if the first argument of the apply() method is not an object, it becomes the owner (object) of the invoked function. In "non-strict" mode, it becomes the global object.</p>
+
+</body>
+</html>

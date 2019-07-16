@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Regular Expressions</h2>
+
+<p id="demo"></p>
+
+<script>
+var obj = /e/.exec("The best things in life are free!");
+document.getElementById("demo").innerHTML =
+"Found " + obj[0] + " in position " + obj.index + " in the text: " + obj.input;
+</script>
+
+<p>The exec() method is a RegExp expression method.</p><br>
+<p>It searches a string for a specified pattern, and returns the found text as an object.</p><br>
+<p>If no match is found, it returns an empty (null) object.</p><br>
+<p>The above example searches a string for the character "e".</p>
+
+</body>
+</html>
+

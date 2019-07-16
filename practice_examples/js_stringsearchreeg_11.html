@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Find a match at the beginning of a word like this: \bWORD</h1>
+
+<p>
+Search for the characters<br>
+"LO"
+<br>in the <strong>beginning</strong> of a word in the phrase:<br>
+"HELLO, LOOK AT YOU!"
+</p>
+
+<p>Found in position: <span id="demo"></span></p>
+
+<script>
+var str = "HELLO, LOOK AT YOU!"; 
+var patt1 = /\bLO/;//Metacharacter
+var result = str.search(patt1);
+document.getElementById("demo").innerHTML = result;
+</script>
+
+</body>
+</html>
+

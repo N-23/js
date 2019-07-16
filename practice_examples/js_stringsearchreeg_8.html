@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Find any of the alternatives separated with |</h1>
+
+<p>Click the button to do a global search for any of the specified alternatives (red|green).</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var str = "re, green, red, green, gren, gr, blue, yellow";
+  var patt1 = /(red|green)/g;//Expression
+  var result = str.match(patt1);
+  document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+</body>
+</html>
+

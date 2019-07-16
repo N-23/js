@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Closures</h2>
+
+<p>Counting with a local variable.</p>
+
+<button type="button" onclick="myFunction()">Count!</button>
+
+<p id="demo">0</p>
+
+<script>
+// Function to increment counter
+function add() {
+  var counter = 0;
+  counter += 1;
+  return counter;
+}
+// Trying to increment the counter
+function myFunction(){
+  document.getElementById("demo").innerHTML = add();
+}
+</script>
+
+<p>The result is not 3 because we reset the local counter every time we call the function.</p>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Perform case-insensitive matching</h1>
+
+<p>Click the button to do a case-insensitive search for "w3schools" in a string.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var str = "Visit W3Schools";
+  var patt1 = /w3schools/i;//Modifier
+  var result = str.match(patt1);
+  document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+</body>
+</html>
+

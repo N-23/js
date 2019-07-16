@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Closures</h2>
+
+<p>Counting with a local variable.</p>
+
+<button type="button" onclick="myFunction()">Count!</button>
+
+<p id="demo">0</p>
+
+<script>
+var add = (function () {
+  var counter = 0;
+  return function () {counter += 1; return counter;}
+})();
+
+function myFunction(){
+  document.getElementById("demo").innerHTML = add();
+}
+</script>
+
+<p>The variable add is assigned the return value of a self-invoking function.<br>
+The self-invoking function only runs once. It sets the counter to zero (0), and returns a function expression.<br>
+This way add becomes a function. The "wonderful" part is that it can access the counter in the parent scope.<br>
+This is called a JavaScript closure. It makes it possible for a function to have "private" variables.<br>
+The counter is protected by the scope of the anonymous function, and can only be changed using the add function.</p>
+
+</body>
+</html>
+
