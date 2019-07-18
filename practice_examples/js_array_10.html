@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+ <body>
+
+  <h2>JavaScript Arrays</h2>
+
+  <p>The typeof operator, when used on an array, returns object:</p>
+
+  <p id="demo"></p>
+
+ <script>
+ var fruits = ["Banana", "Orange", "Apple", "Mango"];
+ document.getElementById("demo").innerHTML = typeof fruits;// returns object
+ </script>
+
+ <p>The typeof operator returns object because a JavaScript array is an object. </p>
+ 
+ <!-- <h2>JavaScript Arrays</h2>
+ <p>The new ECMASCRIPT 5 method isArray returns true when used on an array:</p>
+ <p id="demo"></p>
+ <script>
+  var fruits = ["Banana", "Orange", "Apple", "Mango"];
+  document.getElementById("demo").innerHTML = Array.isArray(fruits); returns true value
+ </script> -->
+
+ <!-- <script>
+  var fruits = ["Banana", "Orange", "Apple", "Mango"];
+  document.getElementById("demo").innerHTML = isArray(fruits);
+  function isArray(myArray) { creating our own isArray function
+   return myArray.constructor.toString().indexOf("Array") > -1;
+  }
+ </script> -->
+ 
+ <!-- <script>
+  var fruits = ["Banana", "Orange", "Apple", "Mango"];
+  document.getElementById("demo").innerHTML = fruits instanceof Array;The instanceof operator returns true if an object is created by a given constructor
+ </script> -->
+
+ </body>
+</html>
+
