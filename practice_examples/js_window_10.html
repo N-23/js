@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript console.group() Method</h1>
+
+<p>Press F12 on your keyboard to view the message in the console view.</p>
+
+<script>
+
+console.log("Hello world!");//It is a function in JavaScript which is used to print any kind of variables defined before in it or to just print any message that needs to be displayed to the user.
+console.group();
+console.log("Hello again, this time inside a group!");
+console.groupEnd();//End a group by using the console.groupEnd() method.
+console.log("and we are back.");
+console.group("myLabel");//A message group with a label.
+console.log("Hello again, this time inside a group, with a label!");
+console.groupCollapsed();// indicates the start of a collapsed message group
+console.log("Hello again, this time inside a collapsed group!");
+console.groupEnd();
+console.log("and we are back.");
+
+
+</script>
+
+</body>
+</html>
