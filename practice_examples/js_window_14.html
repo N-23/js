@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript console.time() Method</h1>
+<p>How long does it take to perform a for-loop 100.000 times?</p>
+<p>Press F12 on your keyboard to view the result in the console view.</p>
+
+<script>
+
+console.time();
+for (i = 0; i < 100000; i++) {
+  // some code
+}
+console.timeEnd();
+
+</script>
+
+<p>Time the number of milliseconds it takes to perform a for-loop a hundred thousand times.</p>
+
+<p><strong>Note:</strong> the console.time() method starts the timer and the console.timeEnd() method ends the timer and writes the result in the console view.</p>
+
+</body>
+</html>
+
