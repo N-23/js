@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <title>Sign up</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/normalise.css" type="text/css">
+        <link rel="stylesheet" href="../css/reset.css" type="text/css">
+        <link rel="stylesheet" href="../css/signup.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700&display=swap" rel="stylesheet">
+        <script src="../js/signup.js" type="text/javascript"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <a href="./home.html"><img src="../images/todoist_logo.png" alt="Todoist Logo" width="160" height="66"></a>
+                <nav>
+                    <ul>
+                        <li><a href="./signup.html">Sign up</a></li>
+                        <li><a href="./login.html">Login</a></li>
+                        <div class="clearfix"></div>
+                    </ul>
+                    <div class="clearfix"></div>
+                </nav>
+            </div>
+        </header>
+
+        <form name="signup">
+            <div class="container">
+                <h1>Create an account</h1>
+                <h4>It's free and always will be.</h4>
+
+                <figure>
+                    <img id="userPic" src="../images/profile_picture.png" alt="Profile Photo" width="150" height="150"><br>
+                    <input id="profilePicture" type="file" accept="image/*" onchange="UploadProfilePicture();">
+                </figure>
+
+                <input id="fName" type="text" placeholder="First Name" title="Minimum 3 characters are required" required>
+                <input id="lName" type="text" placeholder="Last Name" title="Minimum 3 characters are required" required><br>
+                <input id="email" type="email" placeholder="Email ID" title="Enter a valid email id" required><br>
+                <input id="password" type="password" placeholder="Password" title="Password must be 8-15 characters which contains at least a capital letter, a small letter, a number and a special symbol" required><br>
+                <input id="confirmPassword" type="password" placeholder="Confirm Password" title="This password should be same as the above password" required><br>
+                <input id="address" type="text" placeholder="Address"><br>
+
+                <div class="radio">
+                    <input type="radio" name="gender" value="male" checked>Male
+                    <input type="radio" name="gender" value="female">Female
+                    <input type="radio" name="gender" value="other">Other
+                </div>
+                
+                <button type="reset">Reset Form</button>
+                <button type="button" onclick="Validations();">Register</button>
+            </div>
+        </form>
+    </body>
+
+</html>

@@ -1,0 +1,123 @@
+
+/* ------------------------------ universal ------------------------------ */
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 65px;
+    text-shadow: 5px 5px #d8d0d0;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.clearfix{
+    clear: both;
+}
+
+/* ------------------------------ header ------------------------------ */
+header{
+    background-color: #e64031;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    margin: 0;
+}
+
+header nav{
+    float: right;
+}
+
+header nav ul li{
+    float: left;
+}
+
+header a{
+    display: inline-block;
+}
+
+header nav ul li a{
+    line-height: 26px;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    color: azure;
+}
+header nav ul li a:hover{
+    border-bottom: 3px solid black;
+}
+
+/* ------------------------------ section 1 ------------------------------ */
+.sec1{
+    padding-top: 160px;
+}
+
+.sec1 img{
+    float: right;
+}
+
+.left{
+    float: left;
+    width: 650px;
+    margin-top: 50px;
+}
+
+.left p{
+    margin-top: 50px;
+    font-weight: 300;
+    color: rgb(92, 91, 91);
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.left h1:nth-child(2){
+    color: #e64031;
+}
+
+/* ------------------------------ section 2 ------------------------------ */
+.sec2{
+    margin-top: 80px; 
+}
+
+.sec1 img{
+    float: left;
+}
+
+.right{
+    float: right;
+    width: 550px;
+    margin-top: 50px;
+}
+
+.right p{
+    margin-top: 50px;
+    font-weight: 300;
+    color: rgb(92, 91, 91);
+    font-size: 20px;
+    line-height: 28px;
+}
+
+/* ------------------------------ footer ------------------------------ */
+footer{
+    margin-top: 80px;
+    background-color: #e64031;
+}
+
+footer p{
+    margin: 20px 0px;
+    display: inline-block;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 26px;
+}

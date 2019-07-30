@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/normalise.css" type="text/css">
+        <link rel="stylesheet" href="../css/reset.css" type="text/css">
+        <link rel="stylesheet" href="../css/login.css" type="text/css">
+        <script src="../js/login.js" type="text/javascript"></script>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700&display=swap" rel="stylesheet">
+    </head>
+
+
+    <body>
+        <header>
+            <div class="container">
+                <a href="./home.html"><img src="../images/todoist_logo.png" alt="Todoist Logo" width="160" height="66"></a>
+                <nav>
+                    <ul>
+                        <li><a href="./signup.html">Sign up</a></li>
+                        <li><a href="./login.html">Login</a></li>
+                        <div class="clearfix"></div>
+                    </ul>
+                    <div class="clearfix"></div>
+                </nav>
+            </div>
+        </header>
+
+        <form name="login">
+            <div class="container">
+                <input type="email" id="email" placeholder="Email ID"><br>
+                <input type="password" id="password" placeholder="Password"><br>
+                <button id="loginButton" type="button" onclick="Validity();">Login</button> 
+            </div>
+        </form>
+    </body>
+</html>

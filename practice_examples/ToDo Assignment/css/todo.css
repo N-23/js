@@ -1,0 +1,212 @@
+/* ------------------------------ universal ------------------------------ */
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 45px;
+    color: azure;
+}
+
+.container{
+    width: 1250px;
+    margin: 0 auto;
+}
+
+.clearfix{
+    clear: both;
+}
+
+/* ------------------------------ header ------------------------------ */
+header{
+    background-color: #e64031;
+    margin: 0;
+}
+
+header nav{
+    float: right;
+}
+
+header nav ul li{
+    float: left;
+}
+
+header a{
+    display: inline-block;
+}
+
+header nav ul li a{
+    line-height: 26px;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    color: azure;
+}
+header nav ul li a:hover{
+    border-bottom: 3px solid black;
+}
+
+header h1{
+    display: inline-block;
+    margin-left: 300px;
+}
+
+/* ------------------------- section 1 ---------------------------- */
+/* .section1{
+    text-align: center;
+} */
+
+.section1 input[type="text"]{
+    height: 40px;
+    width : 50%;
+}
+
+.section1 .container{
+    padding-top: 30px;
+    background-color: rgb(230, 230, 230);
+    padding-bottom: 30px;
+}
+
+.section1 button[type="button"], .section1 button[type="reset"], #searchby{
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #e64031;
+    color: black;
+    margin-left: 10px;
+    display: inline-block;
+    margin: 20px 10px;
+}
+
+.section1 .left{
+    width: 65%;
+    display: inline-block;
+    line-height: 25px;
+}
+
+.section1 .right{
+    text-align: center;
+    width: 35%;
+    float: right;
+}
+
+.right{
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    border-left: 2px solid black;
+}
+
+.right input[type="text"]{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.right input[type="date"]{
+    width: 50%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.right label{
+    margin-right: 10px;
+}
+
+.right input[type="checkbox"], .right input[type="radio"]{
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-left: 20px;
+}
+
+.right textarea{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.public{
+    margin-bottom: 20px;
+}
+
+.left{
+    padding: 10px 20px 10px 20px;
+}
+
+#todo_table{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#todo_table th,#todo_table td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+#save{
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: black;
+    background-color: #e64031;
+    margin-left: 10px;
+    display: inline-block;
+    display: none;
+}
+
+#searchbar{
+    width: 100%;
+}
+
+#todo_table button{
+    width: 80%;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #e64031;
+    color: black;
+    display: inline-block;
+}
+
+#filter_categories, #filter_status{
+    padding: 5px 10px; 
+    margin-left: 10px;
+    border-radius: 10px;
+    display: none;
+}
+
+#date_filters{
+    margin-left: 5px;
+    display: none;
+}
+
+#filterby{
+    border-radius: 10px;
+    color: black;
+    margin-left: 10px;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+/* #date_filters label{
+    margin-left: 5px;
+} */
+
+#date_filters input{
+    height: 33px;
+    width: 30%;
+}
+
+#noDataFound{
+    display: none;
+    text-align: center;
+    font-size: 50px;
+    color: black;
+}
+

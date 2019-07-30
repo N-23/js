@@ -1,0 +1,77 @@
+/* ------------------------------ universal ------------------------------ */
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.clearfix{
+    clear: both;
+}
+
+/* ------------------------------ header ------------------------------ */
+header{
+    background-color: #e64031;
+}
+
+header nav{
+    float: right;
+}
+
+header nav ul li{
+    float: left;
+}
+
+header a{
+    display: inline-block;
+}
+
+header nav ul li a{
+    line-height: 26px;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    color: azure;
+}
+header nav ul li a:hover{
+    border-bottom: 2px solid black;
+}
+
+/* ------------------------------ form ------------------------------ */
+form{
+    text-align: center;
+}
+
+form .container{
+    margin: 15px auto;
+    background-color: rgb(230, 230, 230);
+    border-radius: 20px;
+    padding: 25px;
+}
+
+input{
+    height: 40px;
+    vertical-align: middle;
+}
+
+input[type="email"], input[type="password"]{
+    margin-bottom: 20px;
+}
+
+button[type="button"]{
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: #e64031;
+    color: black;
+    margin: 10px 10px 0px;
+    display: inline-block;
+}
+

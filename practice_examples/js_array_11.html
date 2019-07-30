@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>The splice() method adds/removes items to/from an array, and returns the removed item(s) and the method changes the original array.</p>
+
+<p>Click the button to add elements to the array.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+  fruits.splice(2, 0, "Lemon", "Kiwi");//Add items to the array.
+  document.getElementById("demo").innerHTML = fruits;
+}
+/*var fruits = ["Banana", "Orange", "Apple", "Mango"];
+function myFunction() {
+  fruits.splice(2, 1, "Lemon", "Kiwi");//At position 2, add the new items, and remove 1 item.
+  document.getElementById("demo").innerHTML = fruits;
+}*/
+/*var fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
+document.getElementById("demo").innerHTML = fruits;
+function myFunction() {
+  fruits.splice(2, 2);//At position 2, remove 2 items
+  document.getElementById("demo").innerHTML = fruits;
+}*/
+</script>
+
+</body>
+</html>
+

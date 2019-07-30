@@ -1,0 +1,116 @@
+/* ------------------------------ universal ------------------------------ */
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.clearfix{
+    clear: both;
+}
+
+/* ------------------------------ header ------------------------------ */
+header{
+    background-color: #e64031;
+}
+
+header nav{
+    float: right;
+}
+
+header nav ul li{
+    float: left;
+}
+
+header a{
+    display: inline-block;
+}
+
+header nav ul li a{
+    line-height: 26px;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    color: azure;
+}
+header nav ul li a:hover{
+    border-bottom: 2px solid black;
+}
+
+/* ------------------------------ form ------------------------------ */
+form{
+    margin: 10px 0px;
+    text-align: center;
+}
+
+form .container{
+    background-color: rgb(230, 230, 230);
+    border-radius: 20px;
+    padding: 25px;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+h4{
+    margin: 10px 0px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+input{
+    height: 40px;
+    vertical-align: middle;
+}
+
+#fName, #lName, #email, #address, #password, #confirmPassword{
+    margin: 10px 0px;
+}
+
+#fName{
+    margin-right: 18px;
+}
+
+#email, #address, #password, #confirmPassword{
+    width: 42.5%;
+}
+
+form figure{
+    /* background-color: red; */
+    padding-bottom: 20px;
+}
+
+form figure input[type="file"]{
+    margin-top: 10px;
+    height: 30px;
+}
+
+button[type="reset"], button[type="button"]{
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #e64031;
+    color: black;
+    margin: 10px 10px 0px;
+    display: inline-block;
+}
+
+/* form .container button:nth-child(1){
+    margin-right: 10px
+} */
+
+.radio input{
+    margin: 0px 5px 0px 40px;
+}
+
