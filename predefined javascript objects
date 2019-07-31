@@ -1,0 +1,182 @@
+Some Predefined Objects (with methods and properties)
+
+        A. window object
+
+        methods.
+        1. alert (str): displays an alert D.B. containing the string argument
+                        as text.
+        2. setInterval (function,time)
+                        causes the function to be repetatively called
+                        at regular time intervals in milliseconds.
+        3. clearInterval (name)
+                        clears a setInterval() call where the argument, name,
+                        represents a certain setInterval() call.
+        4. confirm(str):displays a confirm D.B. containing the string argument
+                        as text. you need either OK(confirm) or cancel.
+                        returns a boolean value.
+        5. prompt (str,str)
+                        displays a prompt D.B. containing the first argument
+                        string as an instruction on what to enter.
+                        The second argument is the default to be returned
+                        in case the user does not enter a string.
+        properties.
+        1. closed       contains a boolean value corresponding to whether or not
+                        the window is closed.
+        2. document     an object itself
+        3. history      an object itself
+        4. location     contains the URL of the document currently displayed
+                        in the window.
+                        can be changed to cause a new document to be displayed.
+        
+        B. document object: a property of the window object
+        methods:
+        1. write (str)  writes the string to the HTML document rather than
+                        to the window itself.
+        properties:
+        1. linkColor    contains the color of unvisited links
+        2. alinkColor   contains the color of active link.
+        3. vlinkColor   contains the color of visited links.
+        4. bgColor      contains the color of background
+        5. fgColor      contains the color of foreground
+        6. Form         an object itself
+        7. Image[]      an object itself
+        8. lastModified contains the date the document was last changed.
+
+        C. history: a property of the window object
+        methods:
+        1. back()       Causes the same effect as hitting the back button of
+                        the browser.
+        2. forward()    causes the same effect as hitting the foreward button
+        3. go(-num)     causes the window to display a document back in its
+                        history list.
+        property:
+        1. length       contains a number representing the number of documents
+                        that have previously been loaded into the window.
+
+        D. Form
+        methods:
+        1. submit()     submit the form to the specified CGI program.
+        2. reset()      resets the form's elements to their original states
+        property:
+        1. elements[]   an object itself
+
+        E. Image[]      a property of the document object.
+                        This array is automatically created to index all of
+                        images that have been marked up with the HTML IMG tags.
+                        A new image can be constructed with the Image()
+                        constructor to preload it.
+        properties:
+        1. src          contains the image's source URL
+        2. border       contains the image's border setting in pixels
+        3. height       contains the image's height in pixels
+        4. width        contains the image's width in pixels
+        5. name         can be set with the NAME attribute of the HTML IMG tag.
+                        can be declared when a new image is constructed with
+                        Image() constructor.
+
+        F. Array        New arrays can be created with the Array() constructor.
+			Ex: var list_1 = new Array(100);  // 100-elements
+			    var list_2 = new Array (10,20, "what"); // 3-elements
+				list_3 = Array [10,20, "what"]; // same as list_2
+			A two-dimensional array is an array of arrays, each 
+			one-dimensional
+	methods
+	1. list_2.sort()	results in ["10", "20", "what"]
+	2. list_2.join()	results in "10, 20, what"
+	3. list_2.reverse	results in ["what", 20, 10]
+	4. list_2.slice(1)	results in [20, "what"]
+	5. list_2.push("next")	results in [10, 20, "what", "next"]
+	6. list_2.pop		results in "what"	
+	property
+	1. length
+
+	G. Date		New Date objects can be created with Date() constructor
+			as in:	var d=new Date();
+	methods
+	1. getDate()	returns the day of the month (1-31)
+	2. getDay()	returns the day of the week (1-7)
+	3. getHours()	returns the hours (0-23)
+	4. getMonth	(1-12)
+	5. getSeconds()	(0-59)
+	6. getYear()	returns the year.
+
+	H. elements[]	This object is a property of a Form object that
+			contains. It is created automatically when the
+			HTML document is loaded that contains a Form
+			element.
+	Various properties for each Form element type
+	1. button:	name
+			value
+	2. checkbox	checked (boolean)
+			name
+			value
+	3. radio button checked (boolean)
+			name
+			value
+	4. reset	name
+			value
+	5. select (pull-down menu)
+			name
+			options[]
+			selectedIndex 
+			value
+	6. text		name
+			value
+	7. Text Area	name
+			value
+
+	I. options[]	This object is a property of SELECT menu.
+			It indexes all of a pull-down menu options.
+			Each option has the following properties
+	1. index	The index number of a particular option
+	2. text		contains the text string that appears on
+			the menu for that option
+	3. value	can carry a hidden value for that option.
+	
+	J. Math		A new Math object does not have to be created
+			to call upon the properties or methods 
+	methods
+	1. random()	returns a floating-point number 0.0 - 0.999999
+			takes no argument.
+	2. pow(base,expo) raises the given base to the power of the second
+			  argument.
+	3. max(num1,num2)
+	4. min(num1,num2)
+	5. round(num)	returns its argument rounded to the nearest integer.
+	6. floor(num)	returns greatest integer less than its argument
+	7. ceil(num)	returns the least integer greater than its argu.
+	8. abs(num)	returns the absolute value
+	9. exp(num)	returns e to the power of the argument
+
+	properties
+	1. E		the base of natural log
+	2. PI		the ratio of a circle's circumsference to its
+			diameter
+
+	K. String	This object is created automatically for each string.
+			It is not a property of any object.
+	methods
+	1. charAt(ind)	returns the character in the string at given ind
+	2. charCodeAt(ind) returns the ASCII number for the character at
+			   specified index of the string.
+	3. indexOf(char)   returns the first index of the given character
+			   returns -1 if no such character
+	4. lastIndexOf(char)
+			returns the last index at which the char is found.
+			-1 is returned if not found.
+	5. substring(ind)
+			returns a substring starting from the given index.
+	6. toLowerCase()
+	7. toUpperCase()
+ 
+	L. Global	This is not a property of any object.
+			Nor does it have to be referenced to call its methods
+			We simply call the methods by name
+	methods
+	1. parseInt(str,num)
+			returns the string converted to an integer in the
+			base given by the second argument.
+			If the second argument is omitted, the default is 10.
+	2. parseFloat(str)	returns the string converted to a floating-
+				point number. (decimal) 
+		
